@@ -7,7 +7,8 @@
       private: false
     - name: password
       prompt: What is your password?
-      private: false
+      private: true 
+      # The user input is hidden by default but it can be made visible by setting private: false.
   tasks:
     - name: Print a message
       ansible.builtin.debug:
