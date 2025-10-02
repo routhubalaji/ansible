@@ -6,6 +6,8 @@
     DURATION: 10HRS
     TRAINER: SIVA
   tasks:  
-    -name: To print the play level vars
+  - name: To print the play level vars
     ansible.builtin.debug:
       msg: "Course Name is: {{COURSE}} Duration is: {{DURATION}} and the trainer is: {{TRAINER}} "
+
+
