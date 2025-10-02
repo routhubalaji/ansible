@@ -6,10 +6,14 @@
     DURATION: 10HRS
     TRAINER: SIVA
   tasks: 
-    - name: To print the task level vars
-      vars:
+  - name: To print the task level vars
+    vars:
       COURSE: DevOps with AWS
       DURATION: 20HRS
       TRAINER: Siva
-      ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Course Name is: {{COURSE}} Duration is: {{DURATION}} and the trainer is: {{TRAINER}} "
+
+
+
+
