@@ -1,0 +1,7 @@
+- name: printing vars from files
+  hosts: local
+  connection: local
+  tasks:  
+  - name: To print the task level vars
+    ansible.builtin.debug:
+      msg: "Course Name is: {{COURSE}} Duration is: {{DURATION}} and the trainer is: {{TRAINER}} "   
