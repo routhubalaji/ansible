@@ -2,8 +2,7 @@
   hosts: local
   connection: local
   vars_files:
-    - course.yaml
-
+  - course.yaml
   task:  
   - name: To print the task level vars
     ansible.builtin.debug:
