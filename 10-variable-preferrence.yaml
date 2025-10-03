@@ -1,18 +1,26 @@
 - name: Checking variables scope
   hosts: local
   connection: local
-  # vars:
-  #   NAME: From Playlevel
-  # vars_files:
-  #   - course.yaml
-  # vars_prompt:
-  #   - name: NAME
-  #     prompt: "What is your name?"   
-  #     private: false
+  vars:
+    NAME: From Playlevel
+  vars_files:
+    - course.yaml
+  vars_prompt:
+    - name: NAME
+      prompt: "What is your name?"   
+      private: false
   tasks:  
   - name: Testing task level vars
-    # vars: 
-    #   NAME: From task level
+    vars: 
+      NAME: From task level
 
     ansible.builtin.debug:
       msg: "Name is: {{NAME}} "  
+
+
+# 1. args or command line
+# 2. from task
+# 3. files
+# 4. prompt
+# 5. play level
+# 6. inventory      
