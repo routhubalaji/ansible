@@ -4,4 +4,4 @@
   tasks:
   - name: passing variables from commandline
     ansible.builtin.debug:
-      msg: "Course name: {{course}}, Duration: {{Duration}} Trainer: {{Trainer}}"
+      msg: "Course name: {{Course}}, Duration: {{Duration}} Trainer: {{Trainer}}"
