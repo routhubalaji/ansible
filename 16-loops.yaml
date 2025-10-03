@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   tasks:
-    name: Install packages
-  ansible.builtin.package:
-    name: "{{item}}"
-    state: latest
-  loop:
-  - nginx
-  - mysql
-  - zip  
+  - name: Install packages
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - zip  
 
