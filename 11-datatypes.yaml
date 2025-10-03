@@ -2,14 +2,14 @@
   hosts: local
   connection: local
   vars:
-      COURSE: "DevOps With AWS"
-      DURATION: 20
-      is_live: true
-  tools:
-  - linux
-  - shell
-  - ansible
-  course:
+    COURSE: "DevOps With AWS"
+    DURATION: 20
+    is_live: true
+    tools:
+    - linux
+    - shell
+    - ansible
+    course:
     cloud: AWS
     current: Ansible
   tasks:
