@@ -1,8 +1,8 @@
 - name: Checking variables scope
   hosts: local
   connection: local
-  vars:
-    NAME: From Playlevel
+  # vars:
+  #   NAME: From Playlevel
   # vars_files:
   #   - course.yaml
   # vars_prompt:
