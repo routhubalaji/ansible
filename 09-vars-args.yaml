@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: passing variables from commandline
-  ansible.builtin.debug:
+    ansible.builtin.debug:
     msg: "Course name: {{course}}, Duration: {{Duration}} Trainer: {{Trainer}}"
