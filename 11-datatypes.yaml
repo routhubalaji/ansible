@@ -10,9 +10,9 @@
     - shell
     - ansible
     course:
-    cloud: AWS
-    current: Ansible
+      cloud: AWS
+      current: Ansible
   tasks:
   - name:
     ansible.builtin.debug:
-      msg: "Course Name: {{COURSE}} Duration: {{DURATION}} is_live:{{is_live}}; Tools are {{tools}} and Course details are {{course}}  "      
+      msg: "Course Name: {{COURSE}} Duration: {{DURATION}} is_live: {{is_live}}; Tools are {{tools}} and Course details are {{course}}  "      
