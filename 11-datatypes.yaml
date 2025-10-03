@@ -13,6 +13,6 @@
       cloud: AWS
       current: Ansible
   tasks:
-  - name:
+  - name: print course info
     ansible.builtin.debug:
       msg: "Course Name: {{COURSE}} Duration: {{DURATION}} is_live: {{is_live}}; Tools are {{tools}} and Course details are {{course}}  "      
