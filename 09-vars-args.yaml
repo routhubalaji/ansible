@@ -6,4 +6,3 @@
     ansible.builtin.debug:
       msg: "Course name: {{COURSE}}, Duration: {{DURATION}} Trainer: {{TRAINER}}"
 
-# First preference goes to variables passing from command line
