@@ -5,10 +5,10 @@
     NAME: From Playlevel
   # vars_files:
   #   - course.yaml
-  vars_prompt:
-    - name: NAME
-      prompt: "What is your name?"   
-      private: false
+  # vars_prompt:
+  #   - name: NAME
+  #     prompt: "What is your name?"   
+  #     private: false
   tasks:  
   - name: Testing task level vars
     # vars: 
